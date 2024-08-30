@@ -1,0 +1,63 @@
+body {
+    font-family: "Raleway", sans-serif;
+}
+
+.header {
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 2rem;
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.header p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.header form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.header form .input__group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.header form input[type="text"] {
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+.header form button {
+    padding: 0.5rem 1rem;
+    background-color: var(--primary-color);
+    color: var(--white);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.header form button:hover {
+    background-color: var(--text-light);
+}
+
+.history {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 4rem;
+    font-size: large;
+}

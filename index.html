@@ -1,52 +1,121 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
-    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
-    rel="stylesheet"/>
-    <link rel="stylesheet" href="style.css">
-    <title>Senai - vitória</title>
-</head>
-<body>
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"rel="stylesheet"/>
+      <link rel="stylesheet" href="/styles.css" />
+    <title>senai-es</title>
+  </head>
+  <body>
     <nav>
-        <div class="nav_logo">
-            <div>Senai</div>
+      <div class="nav__logo">
+        <div>senai-es</div>
+      </div>
+      <ul class="nav__options">
+        <li>
+          <a href="#">Inicio</a>
+        </li>
+        <li>
+          <a href="/page-history/senai-history.html">Nossa História</a>
+        </li>
+        <li>
+          <a href="cadastro.html">Cadastro</a>
+        </li>
+      </ul>
+      <div class="nav__contact">
+        <div class="nav__contact__card">
+          <span><i class="ri-phone-line"></i></span>
+          <div>
+            <p>Telefone</p>
+            <h4>0800 102 0880</h4>
+          </div>
         </div>
-        <ul class="nav_options">
-            <li>
-                <a href="#"><i class="ri-home-line"></i></a>
-            </li>
-            <li>
-                <a href="#"><i class="ri-book-open-line"></i></a>
-            </li>
-            <li>
-                <input type="text" placeholder="Pesquisar">
-            </li>
-        </ul>
-        <div class="nav_contact">
-            <div class="nav_contact_card">
-                <span>
-                    <i class="ri-phone-line"></i>
-                </span>
-                <div>
-                    <p>contato</p>
-                    <h4>0800 102 0880</h4>
-                </div>
-            </div>
+        <div class="nav__contact__card">
+          <span><i class="ri-mail-line"></i></span>
+          <div>
+            <p>Email</p>
+            <h4>sac@senai-es.org.br.</h4>
+          </div>
         </div>
-        <div class="nav_contact">
-            <div class="nav_contact_card">
-                <span>
-                    <i class="ri-mail-line"></i>
-                </span>
-                <div>
-                    <p>contato de email</p>
-                    <h4>sac@senai-es.org.br</h4>
-                </div>
-            </div>
-        </div>
+      </div>
     </nav>
-</body>
+    <header class="header__container">
+      <div class="header__image">
+        <img src="assets/header.jpg" alt="header" />
+      </div>
+      <div class="header__content">
+        <h1>É <span>Aqui</span> Onde Você Constrói o Seu Futuro</h1>
+        <p>
+          Os cursos de iniciação e qualificação profissional do SENAI-ES são destinados para adultos e jovens a partir de 16 anos de idade que 
+          querem aprender uma nova profissão de forma rápida ou mesmo certificar-se na profissão que você já pratica. A carga horária
+           da formação é de no mínimo 160 horas e o estudante sai com certificado de formação profissional do SENAI reconhecido em todo país.
+        </p>
+        <form action="/">
+          <div class="input__row">
+            <div class="input__group">
+              <span><i class="ri-search-line"></i></span>
+              <input type="text" placeholder="Pesquisar por Curso" />
+            </div>
+            <div class="input__group">
+              <span><i class="ri-arrow-down-s-line"></i></span>
+              <input type="text" placeholder="Categorias" />
+            </div>
+          </div>
+          <button type="submit">Pesquisar</button>
+        </form>
+      </div>
+    </header>
+      <div class="cards-container">
+      <div class="card">
+        <img src="/assets/eletricista_predial_baixa_tens_o_4_1_5.jpg" alt="Course 1">
+        <h2>ELETRICISTA INSTALADOR RESIDENCIAL</h2>
+        <p>Executar e manter as instalações elétricas em edificações conforme projetos, normas técnicas vigentes e procedimentos 
+          específicos, planejando o trabalho de forma limpa e organizada, assegurando o desenvolvimento do processo de execução das 
+          obras dentro dos prazos, com segurança, qualidade, economia e respeito ao meio ambiente.	</p>
+          <div class="card-footer">
+          <p class="price">Gratuito</p>
+          <button onclick="window.location.href='/page-courses/course-eletrica.html'">Detalhes</button>
+          </div>
+      </div>
+      <div class="card">
+        <img src="/assets/costura_image_2021-01-28_at_17.08.00_3.jpeg" alt="Course 2">
+        <h2>COSTUREIRO INDUSTRIAL DO VESTUÁRIO - TECIDO MALHA</h2>
+        <p>Proporcionar o desenvolvimento das capacidades técnicas, sociais, metodológicas e organizativas referentes à qualificação 
+          profissional em Costureiro Industrial do Vestuário - Tecido Malha.</p>
+        <div class="card-footer">
+        <p class="price">Gratuito</p>
+        <button onclick="window.location.href='/page-courses/course-costura.html'">Detalhes</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="/assets/hidraulica.jpg" alt="Course 3">
+        <h2>INSTALADOR HIDRÁULICO</h2>
+        <p>Desenvolver as capacidades técnicas, sociais, organizativas e metodológicas para a realização de instalações hidráulicas 
+          através de métodos específicos da ocupação em conformidade com as normas da ABNT.</p>
+        <div class="card-footer">
+          <p class="price">Gratuito</p>
+          <button onclick="window.location.href='/page-courses/course-hidraulica.html'">Detalhes</button>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+        <li class="icon-footer">
+          <a href="" class="icon">
+            <ion-icon name="mail-outline"></ion-icon>
+          </a>
+        </li>
+      </ul>
+      <ul class="menu">
+        <li class="menu-footer">
+          <a href="" class="menu-icon"> Perguntas Frequentes </a>
+        </li>
+        <li class="menu-footer">
+          <a href="" class="menu-icon"> Fale Conosco </a>
+        </li>
+      </ul>
+      <p class="text">SAC - Serviço de Atendimento ao Cliente</p>
+    </footer>
+  </body>
 </html>
