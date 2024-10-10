@@ -360,4 +360,19 @@ nav {
   }
 }
 
+.titulo, .subTitulo {
+  text-align: center;
+  font-weight: bold;
+}
 
+.history {
+  text-align: center;
+  padding: 4rem;
+}
+
+.video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
